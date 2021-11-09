@@ -63,7 +63,7 @@ public class ValidateStudent extends HttpServlet {
 	    else
 	    {
 	    	String msg = "Invalid Username or Password";
-	    	response.sendRedirect("StudentLogin.jsp?msg="+msg);
+	    	response.sendRedirect("index2.jsp?msg="+msg);
 	    
 	}
 
