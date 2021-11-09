@@ -31,7 +31,7 @@ public class LogoutAdmin extends HttpServlet {
 		 HttpSession session = request.getSession();
 		 session.invalidate();
 		 String msg1 = "Logged out successfully";
-		 response.sendRedirect("AdminLogin.jsp?msg1="+msg1);
+		 response.sendRedirect("index2.jsp?msg1="+msg1);
 	}
 
 
