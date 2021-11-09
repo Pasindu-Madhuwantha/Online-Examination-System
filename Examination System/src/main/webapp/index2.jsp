@@ -25,6 +25,19 @@
 	</font>
 
 
+	<font color="red"> <%
+			if(request.getParameter("msg") != null)
+				out.print(request.getParameter("msg"));
+		%>
+	</font>
+	<font color="green"> <%
+			if(request.getParameter("msg1") != null)
+				out.print(request.getParameter("msg1"));
+		%>
+	</font>
+
+
+
 
 	<h2>Welcome To Online Examination System</h2>
 	<div class="container" id="container">
@@ -48,7 +61,7 @@
 
 
 		<div class="form-container sign-in-container">
-			<form action="#">
+			<form action="oes.controller.ValidateStudent" method="post">
 				<h1>Student</h1>
 
 
@@ -58,8 +71,9 @@
 						href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
 				</div>
 				<span>or use your account</span> <input type="UserID"
-					placeholder="UserID" /> <input type="password"
-					placeholder="Password" /> <a href="#">Forgot your password?</a>
+					placeholder="UserID" name="uname" /> <input type="password"
+					placeholder="Password" name="pass" /> <a href="#">Forgot your
+					password?</a>
 				<button>Sign In</button>
 			</form>
 		</div>
